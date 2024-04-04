@@ -27,7 +27,7 @@ phases:
           apt-get -y install maven 
           SNYK_TOKEN=6de14dd3-035f-4943-a1d3-c471ffef5fa3
           export SNYK_TOKEN
-          mvn snyk test -fn 
+          mvn snyk:test -fn 
 
 
 #Dynamic Application Security Scan (DAST scan) using OWASP ZAP
