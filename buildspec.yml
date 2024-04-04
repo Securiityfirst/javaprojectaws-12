@@ -39,7 +39,7 @@ phases:
           sudo apt-get -y autoremove
           apt-get -y install wget
           apt-get -y install default-jdk
-          wget https://sourceforge.net/projects/zap.mirror/files/v2.14.0/ZAP_2.14.0_Linux.tar.gz/download 
+          wget https://us-east-1.console.aws.amazon.com/codesuite/codecommit/repositories/BatumeNew-Repo7/browse?region=us-east-1/ZAP_2.14.0_Linux.tar.gz 
           tar -xvf ZAP_2.14.0_Linux.tar.gz
           cd ZAP_2.14.0
           ./zap.sh -cmd -quickurl https://azure.microsoft.com -quickprogress -quickout ../zap_report.html
