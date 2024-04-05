@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.nd4j</groupId>
             <artifactId>nd4j-common</artifactId>
-            <version><1.0.0-beta3/version>
+            <version><1/version>
         </dependency>
 <!--#Change 1 - Changes for Unit Test Coverage Percentage Update on SonarCloud Dashboard
     #By Batume
