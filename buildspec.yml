@@ -37,7 +37,6 @@ phases:
           sudo apt-get -y upgrade
           sudo apt-get -y full-upgrade
           sudo apt-get -y autoremove
-          sudo timedatectl set-timezone CST
           apt-get -y install wget
           apt-get -y install default-jdk
           wget https://github.com/zaproxy/zaproxy/releases/download/v2.14.0/ZAP_2.14.0_Linux.tar.gz 
