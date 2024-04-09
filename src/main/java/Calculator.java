@@ -8,4 +8,3 @@ Covered code
             return sum;
     }
 }
-
