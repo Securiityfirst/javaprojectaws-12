@@ -7,17 +7,10 @@ public class Unzipper {
         // https://app.snyk.io/vuln/SNYK-JAVA-ORGND4J-72550
         // should appear as Reachable
         ArchiveUtils.unzipFileTo("./malicious_file.zip", "./unzipped/");
-        File f = new File("/myDirectory/myfile.txt");  // Compliant
-
-if(SystemUtils.IS_OS_UNIX) {
-  FileAttribute<Set<PosixFilePermission>> attr = PosixFilePermissions.asFileAttribute(PosixFilePermissions.fromString("rwx------"));
-  Files.createTempFile("prefix", "suffix", attr); // Compliant
-}
-else {
-  File f = Files.createTempFile("prefix", "suffix").toFile();  // Compliant
-  f.setReadable(true, true);
-  f.setWritable(true, true);
-  f.setExecutable(true, true);
-}
+        File f = new File("/myDirectory/myfile.txt");
+        if (f.exists()) {
+            throw new Exception("Malicious file /myDirectory/myfile.txt was created");
+        };
     }
 }
+

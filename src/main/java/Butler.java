@@ -1,7 +1,11 @@
+
 import org.apache.commons.collections.ListUtils;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class Butler {
+
+  Logger logger = Logger.getLogger(getClass().getName());
 
     public void welcome() {
 
@@ -12,7 +16,6 @@ public class Butler {
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("World");
 
-        System.out.println(ListUtils.union(list1, list2));
+        logger.info(ListUtils.union(list1, list2));
     }
 }
-
