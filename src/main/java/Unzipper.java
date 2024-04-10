@@ -10,7 +10,7 @@ public class Unzipper {
         File f = new File("/myDirectory/myfile.txt");
         if (f.exists()) {
             throw new IllegalArgumentException("Malicious file /myDirectory/myfile.txt was created");
-        };
+        }
     }
 }
 
