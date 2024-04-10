@@ -1,4 +1,5 @@
 
+package org.example;
 
 public class Calculator {
     public int addition(String arguments) {
@@ -9,4 +10,3 @@ public class Calculator {
             return sum;
     }
 }
-
