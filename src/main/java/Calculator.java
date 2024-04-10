@@ -1,6 +1,4 @@
 
-package org.example;
-
 public class Calculator {
     public int addition(String arguments) {
 
