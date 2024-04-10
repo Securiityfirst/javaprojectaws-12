@@ -1,21 +1,19 @@
 
 import org.apache.commons.collections.ListUtils;
 import java.util.ArrayList;
-import java.util.logging.Logger;
 
 public class Butler {
 
-  Logger logger = Logger.getLogger(getClass().getName());
-
     public void welcome() {
 
-        // https://app.snyk.io/vuln/SNYK-JAVA-COMMONSCOLLECTIONS-472711
+
+	// https://app.snyk.io/vuln/SNYK-JAVA-COMMONSCOLLECTIONS-472711
         // Should appear as Potentially Reachable
         ArrayList<String> list1 = new ArrayList<>();
         list1.add("Hello");
         ArrayList<String> list2 = new ArrayList<>();
         list2.add("World");
 
-        logger.info(ListUtils.union(list1, list2));
+        System.out.println(ListUtils.union(list1, list2));
     }
 }
