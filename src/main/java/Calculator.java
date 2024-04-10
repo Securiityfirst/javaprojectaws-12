@@ -1,7 +1,7 @@
 
 public class Calculator {
     public int addition(String arguments) {
-Covered code
+
         int sum = 0;
         for (String add : arguments.split("\\+"))
             sum += Integer.valueOf(add);
