@@ -9,7 +9,7 @@ public class Unzipper {
         ArchiveUtils.unzipFileTo("./malicious_file.zip", "./unzipped/");
         File f = new File("/myDirectory/myfile.txt");
         if (f.exists()) {
-            throw new Exception("Malicious file /myDirectory/myfile.txt was created");
+            throw new IllegalArgumentException("Malicious file /myDirectory/myfile.txt was created");
         };
     }
 }
