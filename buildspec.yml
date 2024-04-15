@@ -28,7 +28,7 @@ phases:
      - |-
           apt-get update
           apt-get -y install maven 
-          SNYK_AUTH_TOKEN: "snykAuthToken"
+          SNYK_AUTH_TOKEN=$SNYK_AUTH_TOKEN 
           mvn snyk:test  
 
 
