@@ -2,6 +2,9 @@ version: 0.2
 env:
     secrets-manager:
       TOKEN: thirdsecret:tokenforsonar
+env:
+  parameter-store:
+    SNYK_AUTH_TOKEN: "snykAuthToken"
 phases:
   install:
     runtime-versions:
@@ -25,8 +28,6 @@ phases:
      - |-
           apt-get update
           apt-get -y install maven 
-          SNYK_TOKEN=6de14dd3-035f-4943-a1d3-c471ffef5fa3
-          export SNYK_TOKEN
           mvn snyk:test  
 
 
