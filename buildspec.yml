@@ -4,7 +4,7 @@ env:
       TOKEN: thirdsecret:tokenforsonar
 env:
   parameter-store:
-    SYNK_TOKEN: "synk-token"
+   SNYK_TOKEN: "synk-token"
 phases:
   install:
     runtime-versions:
@@ -28,7 +28,7 @@ phases:
      - |-
           apt-get update
           apt-get -y install maven 
-          SYNK_TOKEN: "synk-token"
+          SNYK_TOKEN: "synk-token"
           snyk auth
           mvn snyk:test  
 
