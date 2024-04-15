@@ -29,6 +29,7 @@ phases:
           apt-get update
           apt-get -y install maven 
           SYNK_TOKEN: "synk-token"
+          snyk auth
           mvn snyk:test  
 
 
