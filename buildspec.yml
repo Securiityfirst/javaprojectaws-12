@@ -30,6 +30,16 @@ phases:
           mvn snyk:test  
 
 
+#### Hide synk Token in github secrets
+
+#1- add secret cridentials to the github secrets (add secret repository) secrete name "SNYK_TOKEN"
+#https://github.com/Securiityfirst/BatumeNew-Repo1/settings/secrets/actions
+
+#2- call repository in the code as shown below; 
+
+#env:
+# SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
 #Dynamic Application Security Scan (DAST scan) using OWASP ZAP
 
      - |-
