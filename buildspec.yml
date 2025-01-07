@@ -2,6 +2,7 @@ version: 0.2
 env:
     secrets-manager:
       TOKEN: thirdsecret:tokenforsonar
+SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 phases:
   install:
     runtime-versions:
