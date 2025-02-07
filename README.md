@@ -1,5 +1,5 @@
 This is an intentionally vulnerable application. It was purposely designed to demonstrate the capabilities of Snyk's Reachable
-Vulnerabilities feature and includes both a "Reachable" vulnerability (with a direct data flow to the vulnerable function) and a "Potentially Reachable" vulnerability (where only partial data exists for determining reachability).
+Vulnerabilities feature and includes both a "Reachable" vulnerability (with a direct data flow to the vulnerable function) and a "Potentially Reachable" vulnerability (where only partial data exists for determining reachability). CI/CD pipeline using s3 bucket for artifacts(zap report)
 
 
 ## Included vulnerabilities
@@ -37,3 +37,38 @@ to next java run.*
 
 ### Snyk UI
 ![Snyk UI Reachable Vulnerabilities](UI_reachable.png)
+
+![image](https://github.com/user-attachments/assets/0249c219-2ebb-4052-8381-48cc52afece1)
+
+![image](https://github.com/user-attachments/assets/c53d8a61-7a12-40b7-be65-f56efcd57b41)
+
+![image](https://github.com/user-attachments/assets/32cc3a26-4d04-4070-8269-21ae7f522cb0)
+
+![image](https://github.com/user-attachments/assets/3c775601-c6b8-451e-a61b-85458d95a301)
+
+![image](https://github.com/user-attachments/assets/47cff723-6837-4d30-8ae4-81051a09cf3a)
+
+![image](https://github.com/user-attachments/assets/6f0eee42-a78f-406b-9ae7-60464314becd)
+
+![image](https://github.com/user-attachments/assets/6e54a87d-289c-4d65-8f93-c15b5e6aa861)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
