@@ -58,7 +58,7 @@ phases:
 
 artifacts:
   - Name: Build 
-  Bucket: s3-bucket-name
+  Bucket: s3-bucket-zap
       files:
          - zap_report.html
 
